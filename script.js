@@ -1,8 +1,3 @@
-// Loom - rede social escolar do Colégio AGV
-// Todos os dados ficam no navegador (localStorage) até existir um servidor.
-
-// ==================== Dados iniciais (turmas, cores e perfis de exemplo) ====================
-
 const TURMAS = [["DS", "Sistemas"], ["ADM", "Administração"], ["PRT", "Portos"], ["BIO", "Bioeconomia"]];
 const PAL = {
     rosa: ["#e0556b", "Rosa", "#ffd6d6"],
