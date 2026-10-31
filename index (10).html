@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Loom - Rede social do Colégio AGV</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tela de entrada: criar perfil ou entrar -->
+  <div class="gate hide" id="gate">
+    <div class="card">
+      <span class="logo"></span>
+      <p style="text-align:center;color:var(--mut);margin:0">A rede social dos alunos do Colégio AGV.</p>
+
+      <div id="gx1">
+        <label>Nome</label>
+        <input id="gn" maxlength="40" placeholder="Seu nome">
+      </div>
+
+      <label>Usuário</label>
+      <input id="gu" maxlength="20" placeholder="@usuario">
+
+      <label>Senha</label>
+      <input id="gp" type="password" placeholder="Mínimo 4 caracteres">
+
+      <div id="gx2">
+        <div class="row">
+          <div>
+            <label>Ano</label>
+            <select id="gy"><option>1</option><option>2</option><option>3</option></select>
+          </div>
+          <div style="flex:2">
+            <label>Turma</label>
+            <select id="gt"></select>
+          </div>
+        </div>
+        <label>Bio (opcional)</label>
+        <input id="gb" maxlength="120" placeholder="Fale um pouco sobre você">
+      </div>
+
+      <button class="bt" style="width:100%;margin-top:18px" id="gok">Criar meu perfil</button>
+      <button class="bt g" style="width:100%;margin-top:8px" id="gsw">Já tenho conta</button>
+      <p id="ge" style="color:#c0392b;font-size:13px;margin:8px 0 0"></p>
+    </div>
+  </div>
+
+  <!-- O app (feed, perfil etc.) é desenhado aqui pelo script.js -->
+  <div class="app hide" id="app"></div>
+
+  <!-- Mensagens rápidas (avisos curtos na parte de baixo) -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
